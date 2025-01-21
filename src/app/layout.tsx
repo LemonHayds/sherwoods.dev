@@ -15,7 +15,19 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: "Hayden Sherwood | Portfolio",
-  description: "Creative fullstack developer based in London / San Francisco.",
+  description: "Creative fullstack developer based in London / San Francisco",
+  openGraph: {
+    title: "Hayden Sherwood | Portfolio",
+    description: "Creative fullstack developer based in London / San Francisco",
+    type: "website",
+    locale: "en_US",
+    url: "https://sherwoods.dev",
+    siteName: "sherwoods.dev",
+  },
+  robots: {
+    index: true,
+    follow: false,
+  },
 };
 
 export default function RootLayout({

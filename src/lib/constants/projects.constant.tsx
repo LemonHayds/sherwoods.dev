@@ -115,7 +115,7 @@ export const PROJECTS: ProjectType[] = [
     id: "betterverse",
     title: "Betterverse",
     description:
-      "A donation platform with pre-seed investment. Goal of enabling users to donate to charitable projects in crypto, receive unique NFTs, and ability to track the impact of their contributions in efforts to make charitable giving more engaging. Unfortunatley, the project no longer exists - but was a beautiful learning experience.",
+      "A donation platform with pre-seed investment. Goal of enabling users to donate to charitable projects in crypto, receive unique NFTs, and ability to track the impact of their contributions in efforts to make charitable giving more engaging. Unfortunately, the project no longer exists - but was an amazing learning experience.",
     slides: [
       { image: betterverse_1, title: "Betterverse" },
       { image: betterverse_2, title: "Betterverse" },

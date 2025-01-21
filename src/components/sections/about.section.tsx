@@ -39,12 +39,11 @@ const About = () => {
             <p className="mb-0">
               In my career, I&apos;ve had the privilege of scoping and
               developing digital products across various industries and
-              settings. My journey has taken me through freelance projects, an
-              investment firm, and even founding a startup. Outside of work,
+              settings. My journey has taken me through an investment firm,
+              freelance projects, and even founding a startup. Outside of work,
               you&apos;ll often find me coding, reading, or spending time with
               my beautiful wife and our{" "}
-              <Yoohoo text="frenchie" image={yoohoo} imageAlt="frenchie" />,
-              embracing life&apos;s simple joys.
+              <Yoohoo text="frenchie" image={yoohoo} imageAlt="frenchie" />.
             </p>
           </div>
           <div className="flex items-center gap-3 mt-[2px]">
