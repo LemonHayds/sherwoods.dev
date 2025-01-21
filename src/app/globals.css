@@ -55,6 +55,8 @@ progress::-moz-progress-value {
 }
 .embla__viewport {
   overflow: hidden;
+  max-height: 70vh;
+  @apply rounded-lg;
 }
 .embla__container {
   display: flex;
@@ -70,12 +72,8 @@ progress::-moz-progress-value {
 .embla__slide__img {
   @apply rounded-lg;
   display: block;
-  height: var(--slide-height);
   width: 100%;
-  object-fit: cover;
-}
-
-.embla__slide__img {
+  object-fit: contain;
   user-select: none;
 }
 
