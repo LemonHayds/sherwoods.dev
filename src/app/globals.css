@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+  --foreground: #ffffff;
+  --background: #0f0f0f;
+  --white: #ffffff;
+  --black: #131313;
+  --heading: #f5eee7;
+  --subheading: #f3dbc6;
+  --body: #f3f3f3fa;
+  --body-muted: #f3f3f3ca;
+  --primary: #f5eee7;
+  --secondary: #f3dbc6;
+}
+
+html {
+  --scroll-behavior: smooth !important;
+  scroll-behavior: smooth !important;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: "Inter", sans-serif;
+}
+
+progress {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+progress::-webkit-progress-bar {
+  background-color: rgb(245, 238, 231, 0.6);
+}
+
+progress::-webkit-progress-value {
+  background-color: var(--primary);
+}
+
+progress::-moz-progress-bar {
+  background-color: rgb(245, 238, 231, 0.6);
+}
+
+progress::-moz-progress-value {
+  background-color: var(--primary);
+}
+
+.embla {
+  @apply max-w-screen-lg;
+  --slide-spacing: 1rem;
+  --slide-size: 100%;
+}
+.embla__viewport {
+  overflow: hidden;
+}
+.embla__container {
+  display: flex;
+  touch-action: pan-y pinch-zoom;
+  margin-left: calc(var(--slide-spacing) * -1);
+}
+.embla__slide {
+  transform: translate3d(0, 0, 0);
+  flex: 0 0 var(--slide-size);
+  min-width: 0;
+  padding-left: var(--slide-spacing);
+}
+.embla__slide__img {
+  @apply rounded-lg;
+  display: block;
+  height: var(--slide-height);
+  width: 100%;
+  object-fit: cover;
+}
+
+.embla__slide__img {
+  user-select: none;
+}
+
+.skills-fade {
+  --gradient-color: var(--background);
+  --gradient-width: 50px;
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    black var(--gradient-width),
+    black calc(100% - var(--gradient-width)),
+    transparent
+  );
+}
