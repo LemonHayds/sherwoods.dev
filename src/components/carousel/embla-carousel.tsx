@@ -31,14 +31,17 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
 
   return (
     <div className={clsxm("embla", className)}>
-      <div className="embla__viewport overflow-hidden" ref={emblaRef}>
+      <div
+        className="embla__viewport overflow-hidden transition-none"
+        ref={emblaRef}
+      >
         <div className="embla__container">
           {slides.map((slide, index) => (
             <div className="embla__slide" key={index}>
               <Image
                 src={slide.image}
                 alt={slide.title}
-                className="embla__slide__img rounded-lg "
+                className="embla__slide__img rounded-lg"
               />
             </div>
           ))}

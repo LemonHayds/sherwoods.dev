@@ -13,12 +13,16 @@ const inter = Inter({
   subsets: ["latin"],
 });
 
+const META_TITLE = "Hayden Sherwood | Portfolio";
+const META_DESCRIPTION =
+  "Creative fullstack developer based in London / San Francisco";
+
 export const metadata: Metadata = {
-  title: "Hayden Sherwood | Portfolio",
-  description: "Creative fullstack developer based in London / San Francisco",
+  title: META_TITLE,
+  description: META_DESCRIPTION,
   openGraph: {
-    title: "Hayden Sherwood | Portfolio",
-    description: "Creative fullstack developer based in London / San Francisco",
+    title: META_TITLE,
+    description: META_DESCRIPTION,
     type: "website",
     locale: "en_US",
     url: "https://sherwoods.dev",
