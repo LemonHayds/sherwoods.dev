@@ -1,4 +1,5 @@
 import { GoogleAnalytics } from "@next/third-parties/google";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Inter } from "next/font/google";
 
 import Footer from "../components/footer";
@@ -51,6 +52,7 @@ export default function RootLayout({
           <div className="flex-1 h-full w-full px-6 lg:px-2">{children}</div>
           <Footer />
         </div>
+        <SpeedInsights />
       </body>
     </html>
   );
