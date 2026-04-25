@@ -22,27 +22,29 @@ const About = () => {
         <div className="flex flex-col gap-4">
           <div className="text-body-muted">
             <p className="mb-4">
-              I&apos;m a creative and ambitious full-stack developer focused on
-              building engaging and scalable digital solutions. Currently Lead
-              Developer at{" "}
+              I&apos;m a creative and ambitious AI obsessed full-stack engineer
+              focused on building beautiful, engaging and scalable digital
+              solutions.
+            </p>
+            <p className="mb-4">
+              Currently building{" "}
               <a
-                href="https://intent.uk"
+                href="https://storyline.now"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="font-medium text-body hover:underline"
               >
-                Intent
+                Storyline
               </a>
-              , where I manage cloud servers, enhance a custom CMS platform, and
-              maintain high-traffic websites used by thousands.
+              {" - "}the future of storytelling.
             </p>
             <p className="mb-0">
               In my career, I&apos;ve had the privilege of scoping and
               developing digital products across various industries and
               settings. My journey has taken me through an investment firm,
               freelance projects, and even founding a startup. Outside of work,
-              you&apos;ll often find me coding, reading, or spending time with
-              my beautiful wife and our{" "}
+              you&apos;ll often find me coding, reading, playing around with any
+              new AI tech, or spending time with my beautiful wife and our{" "}
               <Yoohoo text="frenchie" image={yoohoo} imageAlt="frenchie" />.
             </p>
           </div>

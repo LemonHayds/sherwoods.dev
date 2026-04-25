@@ -15,6 +15,8 @@ import ta_4 from "../../assets/images/projects/ta/ta_login.webp";
 import ta_3 from "../../assets/images/projects/ta/ta_profile.webp";
 import ta_1 from "../../assets/images/projects/ta/ta_thumbnail.webp";
 
+import { AppDownloadButtons } from "../../components/app-download-buttons";
+
 import type { ProjectType } from "../types/project.type";
 
 import {
@@ -32,9 +34,32 @@ import {
   FIREBASE_SKILL,
   HTML_SKILL,
   SOLIDITY_SKILL,
+  NODEJS_SKILL,
 } from "./skills.constant";
 
 export const PROJECTS: ProjectType[] = [
+  {
+    id: "tickornot",
+    title: "tickornot",
+    description: (
+      <>
+        Fact-check TikTok videos in seconds. A mobile app that verifies claims
+        with cited sources, helping users separate facts from misinformation.
+        <AppDownloadButtons />
+      </>
+    ),
+    slides: [],
+    link: "https://tickornot.com",
+    techstack: [
+      REACT_SKILL,
+      TYPESCRIPT_SKILL,
+      NESTJS_SKILL,
+      NODEJS_SKILL,
+      SUPABASE_SKILL,
+      TAILWIND_SKILL,
+      NEXTJS_SKILL,
+    ],
+  },
   {
     id: "intent",
     title: "Intent",
@@ -77,7 +102,7 @@ export const PROJECTS: ProjectType[] = [
       { image: intent_4, title: "Intent" },
       { image: intent_5, title: "Intent" },
     ],
-    link: "https://intent.vercel.app",
+    link: "https://intent.co.uk",
     techstack: [
       REACT_SKILL,
       NEXTJS_SKILL,
@@ -121,7 +146,7 @@ export const PROJECTS: ProjectType[] = [
       { image: betterverse_2, title: "Betterverse" },
       { image: betterverse_3, title: "Betterverse" },
     ],
-    link: "https://betterverse.vercel.app",
+    // link: "https://betterverse.vercel.app",
     techstack: [
       HTML_SKILL,
       CSS_SKILL,
@@ -141,7 +166,7 @@ export const PROJECTS: ProjectType[] = [
       { image: ta_3, title: "True Altitude" },
       { image: ta_4, title: "True Altitude" },
     ],
-    link: "https://truealtitude.vercel.app",
+    // link: "https://truealtitude.vercel.app",
     techstack: [JAVASCRIPT_SKILL, HTML_SKILL, CSS_SKILL, FIREBASE_SKILL],
   },
 ];

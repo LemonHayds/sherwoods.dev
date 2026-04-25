@@ -66,7 +66,7 @@ const ProjectContainer = (props: ProjectContainerProps) => {
           </FancyText>
         </div>
 
-        <p className="text-body-muted mb-1">{project.description}</p>
+        <div className="text-body-muted mb-1">{project.description}</div>
         <div className="flex items-center justify-start gap-2 mt-1">
           {project.techstack.map((skill: SkillType, index: number) => {
             return (
