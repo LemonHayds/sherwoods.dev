@@ -1,15 +1,15 @@
 import betterverse_2 from "../../assets/images/projects/betterverse/betterverse_impact.webp";
 import betterverse_3 from "../../assets/images/projects/betterverse/betterverse_summary.webp";
 import betterverse_1 from "../../assets/images/projects/betterverse/betterverse_thumbnail.webp";
+import storyline_1 from "../../assets/images/projects/storyline/storyline_thumbnail.webp";
+import storyline_2 from "../../assets/images/projects/storyline/storyline_listing.webp";
+import tickornot_1 from "../../assets/images/projects/tickornot/tickornot_thumbnail.webp";
+import tickornot_2 from "../../assets/images/projects/tickornot/tickornot_listing.webp";
 import intent_2 from "../../assets/images/projects/intent/intent_compare.webp";
 import intent_4 from "../../assets/images/projects/intent/intent_content.webp";
 import intent_5 from "../../assets/images/projects/intent/intent_form.webp";
 import intent_3 from "../../assets/images/projects/intent/intent_partners.webp";
 import intent_1 from "../../assets/images/projects/intent/intent_thumbnail.webp";
-import moodly_4 from "../../assets/images/projects/moodly/moodly_analytics.webp";
-import moodly_1 from "../../assets/images/projects/moodly/moodly_dark.webp";
-import moodly_2 from "../../assets/images/projects/moodly/moodly_picker.webp";
-import moodly_3 from "../../assets/images/projects/moodly/moodly_thumbnail.webp";
 import ta_2 from "../../assets/images/projects/ta/ta_dashboard.webp";
 import ta_4 from "../../assets/images/projects/ta/ta_login.webp";
 import ta_3 from "../../assets/images/projects/ta/ta_profile.webp";
@@ -35,9 +35,39 @@ import {
   HTML_SKILL,
   SOLIDITY_SKILL,
   NODEJS_SKILL,
+  EXPO_SKILL,
 } from "./skills.constant";
 
 export const PROJECTS: ProjectType[] = [
+  {
+    id: "storyline",
+    title: "Storyline",
+    description: (
+      <>
+        Turn a memory into a short film - just by talking. Tell a story in your
+        own voice, and Storyline transforms it into a cinematic video you can
+        keep and share with the people who matter most.
+        <AppDownloadButtons
+          appStoreUrl="https://apps.apple.com/us/app/storyline-tell-your-story/id6759474533"
+          websiteUrl="https://www.storyline.now/"
+        />
+      </>
+    ),
+    slides: [
+      { image: storyline_1, title: "Storyline" },
+      { image: storyline_2, title: "Storyline" },
+    ],
+    link: "https://storyline.video",
+    techstack: [
+      REACT_SKILL,
+      EXPO_SKILL,
+      TYPESCRIPT_SKILL,
+      NESTJS_SKILL,
+      NODEJS_SKILL,
+      POSTGRESQL_SKILL,
+      GOOGLE_CLOUD_SKILL,
+    ],
+  },
   {
     id: "tickornot",
     title: "tickornot",
@@ -45,17 +75,25 @@ export const PROJECTS: ProjectType[] = [
       <>
         Fact-check TikTok videos in seconds. A mobile app that verifies claims
         with cited sources, helping users separate facts from misinformation.
-        <AppDownloadButtons />
+        <AppDownloadButtons
+          appStoreUrl="https://apps.apple.com/app/id6755215165"
+          websiteUrl="https://tickornot.com"
+        />
       </>
     ),
-    slides: [],
+    slides: [
+      { image: tickornot_1, title: "tickornot" },
+      { image: tickornot_2, title: "tickornot" },
+    ],
     link: "https://tickornot.com",
     techstack: [
       REACT_SKILL,
+      EXPO_SKILL,
       TYPESCRIPT_SKILL,
       NESTJS_SKILL,
       NODEJS_SKILL,
       SUPABASE_SKILL,
+      GOOGLE_CLOUD_SKILL,
       TAILWIND_SKILL,
       NEXTJS_SKILL,
     ],
@@ -114,26 +152,6 @@ export const PROJECTS: ProjectType[] = [
       POSTGRESQL_SKILL,
       CSS_SKILL,
       DOCKER_SKILL,
-    ],
-  },
-  {
-    id: "moodly",
-    title: "Moodly",
-    description:
-      "Moodly is a web app that allows users to log their moods with emojis, visualized globally. Still a work in progress.",
-    slides: [
-      { image: moodly_1, title: "Moodly" },
-      { image: moodly_2, title: "Moodly" },
-      { image: moodly_3, title: "Moodly" },
-      { image: moodly_4, title: "Moodly" },
-    ],
-    link: "https://moodly.vercel.app",
-    techstack: [
-      REACT_SKILL,
-      NEXTJS_SKILL,
-      TAILWIND_SKILL,
-      TYPESCRIPT_SKILL,
-      SUPABASE_SKILL,
     ],
   },
   {

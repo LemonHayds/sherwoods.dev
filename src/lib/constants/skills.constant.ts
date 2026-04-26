@@ -1,5 +1,6 @@
 import AxiosIcon from "../../components/icons/axios.icon";
 import CssIcon from "../../components/icons/css.icon";
+import ExpoIcon from "../../components/icons/expo.icon";
 import DataGripIcon from "../../components/icons/datagrip.icon";
 import DockerIcon from "../../components/icons/docker.icon";
 import FirebaseIcon from "../../components/icons/firebase.icon";
@@ -163,6 +164,13 @@ export const DATAGRIP_SKILL = {
   url: "https://www.jetbrains.com/datagrip/",
 };
 
+export const EXPO_SKILL = {
+  id: "expo",
+  label: "Expo",
+  icon: ExpoIcon,
+  url: "https://expo.dev/",
+};
+
 export const SKILLS: SkillType[] = [
   REACT_SKILL,
   NEXTJS_SKILL,
@@ -184,4 +192,5 @@ export const SKILLS: SkillType[] = [
   THREEJS_SKILL,
   AXIOS_SKILL,
   DATAGRIP_SKILL,
+  EXPO_SKILL,
 ];
