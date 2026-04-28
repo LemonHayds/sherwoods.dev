@@ -1,17 +1,19 @@
 type AppDownloadButtonsProps = {
   appStoreUrl: string;
   websiteUrl: string;
+  stacked?: boolean;
 };
 
 export function AppDownloadButtons({
   appStoreUrl,
   websiteUrl,
+  stacked = false,
 }: AppDownloadButtonsProps) {
   const buttonClasses =
     "group flex items-center gap-3 text-body border border-secondary pl-3 pr-5 py-2.5 rounded-xl font-bold text-sm w-fit transition-colors duration-300 hover:text-primary hover:border-primary";
 
   return (
-    <div className="flex flex-row items-start gap-3 flex-wrap mt-3">
+    <div className={`flex items-start gap-3 mt-3 ${stacked ? "flex-col md:items-end" : "flex-row flex-wrap"}`}>
       <a
         href={appStoreUrl}
         target="_blank"

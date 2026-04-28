@@ -15,7 +15,7 @@ const About = () => {
   return (
     <SectionContainer
       id="about"
-      className="flex flex-col-reverse md:flex-row justify-between items-start gap-8 pt-10 pb-10 md:pb-5 -mt-[1px]"
+      className="flex flex-col-reverse md:flex-row justify-between items-start gap-8 pt-10 pb-0 -mt-[1px]"
     >
       <div>
         <Heading type="h2">About</Heading>
@@ -27,7 +27,7 @@ const About = () => {
               solutions.
             </p>
             <p className="mb-4">
-              Currently building{" "}
+              I am the founding engineer at{" "}
               <a
                 href="https://storyline.now"
                 target="_blank"
@@ -36,7 +36,8 @@ const About = () => {
               >
                 Storyline
               </a>
-              {" - "}the future of storytelling.
+              , the future of storytelling. I am responsible for all aspects of
+              building the platform and managing infrastructure growth.
             </p>
             <p className="mb-0">
               In my career, I&apos;ve had the privilege of scoping and

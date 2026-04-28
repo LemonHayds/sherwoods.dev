@@ -12,7 +12,7 @@ const Footer = () => {
       <FancyText type="div" className="group text-body-muted text-md">
         <a
           href={`mailto:${EMAIL}`}
-          className="group-hover:text-body transition-all duration-300 ease-in-out"
+          className="group-hover:text-body transition-all duration-300 ease-in-out flex items-center"
         >
           {EMAIL} 🌳
         </a>

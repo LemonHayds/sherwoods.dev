@@ -37,7 +37,7 @@ const Intro = () => {
               color="var(--secondary)"
               className="size-3.5 my-auto animate-pulse pb-[0.5px]"
             />
-            Located in London / San Francisco
+            Located in San Francisco
           </FancyText>
         </div>
       </div>

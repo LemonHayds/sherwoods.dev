@@ -53,12 +53,9 @@ const Projects = () => {
 
   return (
     <div>
-      <SectionContainer id="projects" className="pt-0 pb-2 group">
+      <SectionContainer id="projects" className="pt-12 pb-0 group">
         <div className="flex justify-between items-center">
           <Heading className="mb-[-1px]">Projects</Heading>
-          <FancyText type="div" className="animate-bounce hidden md:block">
-            ...and many more to come
-          </FancyText>
         </div>
         <div className="flex flex-col items-center justify-center gap-y-8 pt-2 md:pt-3">
           {PROJECTS.map((project, index) => (

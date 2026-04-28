@@ -1,8 +1,6 @@
 import betterverse_2 from "../../assets/images/projects/betterverse/betterverse_impact.webp";
 import betterverse_3 from "../../assets/images/projects/betterverse/betterverse_summary.webp";
 import betterverse_1 from "../../assets/images/projects/betterverse/betterverse_thumbnail.webp";
-import storyline_1 from "../../assets/images/projects/storyline/storyline_thumbnail.webp";
-import storyline_2 from "../../assets/images/projects/storyline/storyline_listing.webp";
 import tickornot_1 from "../../assets/images/projects/tickornot/tickornot_thumbnail.webp";
 import tickornot_2 from "../../assets/images/projects/tickornot/tickornot_listing.webp";
 import intent_2 from "../../assets/images/projects/intent/intent_compare.webp";
@@ -40,41 +38,13 @@ import {
 
 export const PROJECTS: ProjectType[] = [
   {
-    id: "storyline",
-    title: "Storyline",
-    description: (
-      <>
-        Turn a memory into a short film - just by talking. Tell a story in your
-        own voice, and Storyline transforms it into a cinematic video you can
-        keep and share with the people who matter most.
-        <AppDownloadButtons
-          appStoreUrl="https://apps.apple.com/us/app/storyline-tell-your-story/id6759474533"
-          websiteUrl="https://www.storyline.now/"
-        />
-      </>
-    ),
-    slides: [
-      { image: storyline_1, title: "Storyline" },
-      { image: storyline_2, title: "Storyline" },
-    ],
-    link: "https://storyline.video",
-    techstack: [
-      REACT_SKILL,
-      EXPO_SKILL,
-      TYPESCRIPT_SKILL,
-      NESTJS_SKILL,
-      NODEJS_SKILL,
-      POSTGRESQL_SKILL,
-      GOOGLE_CLOUD_SKILL,
-    ],
-  },
-  {
     id: "tickornot",
     title: "tickornot",
     description: (
       <>
         Fact-check TikTok videos in seconds. A mobile app that verifies claims
         with cited sources, helping users separate facts from misinformation.
+        Powered by OpenAI and Perplexity AI APIs.
         <AppDownloadButtons
           appStoreUrl="https://apps.apple.com/app/id6755215165"
           websiteUrl="https://tickornot.com"

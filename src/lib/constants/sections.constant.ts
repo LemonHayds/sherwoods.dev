@@ -7,7 +7,7 @@ export const SECTIONS: SectionType[] = [
   },
   {
     label: "works",
-    id: "projects",
+    id: "focused",
   },
   {
     label: "contact",
